@@ -287,4 +287,8 @@ figure {
   article:first-child .movie-backdrop {
     display: block;
   }
+
+  article:first-child .movie-overview {
+    display: block;
+  }
 }
