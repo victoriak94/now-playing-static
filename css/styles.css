@@ -195,3 +195,96 @@ figure {
 .about > p {
   margin: 0;
 }
+
+@media screen and (min-width: 768px) {
+  main {
+    margin-left: 65px;
+  }
+
+  .site-nav {
+    right: auto;
+    top: 0;
+    width: 65px;
+    text-align: center;
+  }
+
+  .site-logo {
+    display: relative;
+    z-index: 200;
+    width: 50px;
+    left: 8px;
+    top: 8px;
+  }
+
+  .site-nav-list {
+    display: grid;
+    position: absolute;
+    top: 60px;
+    left: 8px;
+    grid-template-columns: 1fr;
+    width: 40px;
+  }
+
+  .site-nav-item-label {
+    position: relative;
+    left: -5px;
+    width: auto;
+  }
+
+  .movie-overview {
+    display: block;
+  }
+
+  .site-footer {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    background-color: #000;
+    color: #fff;
+    width: auto;
+  }
+
+  .footer-nav {
+    grid-column: 1;
+  }
+
+  .about {
+    background-color: #000;
+    grid-column: 2;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  article {
+    display: grid;
+  }
+
+  .movie-backdrop {
+    display: none;
+  }
+
+  .movie-overview {
+    display: none;
+  }
+
+  .movie-poster {
+    display: block;
+  }
+
+  article:first-child {
+    grid-column: span 3;
+  }
+
+  article:first-child .movie-poster {
+    display: none;
+  }
+
+  article:first-child .movie-backdrop {
+    display: block;
+  }
+}
