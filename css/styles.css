@@ -185,7 +185,6 @@ figure {
   margin-right: 0;
 }
 
-
 .about {
   background-color: #333333;
   color: #ffffff;
@@ -219,16 +218,19 @@ figure {
   .site-nav-list {
     display: grid;
     position: absolute;
-    top: 60px;
+    top: 70px;
     left: 8px;
     grid-template-columns: 1fr;
-    width: 40px;
+  }
+
+  .site-nav-item {
+    text-align: center;
   }
 
   .site-nav-item-label {
     position: relative;
     left: -5px;
-    width: auto;
+    font-size: 8px;
   }
 
   .movie-overview {
